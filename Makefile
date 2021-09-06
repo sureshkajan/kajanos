@@ -1,4 +1,4 @@
-    OBJECTS = loader.o kmain.o drivers/io.o drivers/frame_buffer.o drivers/serial_port.o segmentation/gdt.o segmentation/segments.o interrupts/keyboard.o interrupts/interrupt_handlers.o interrupts/interrupts.o interrupts/pic.o interrupts/idt.o
+    OBJECTS = loader.o kmain.o drivers/io/io.o drivers/frame_buffer/frame_buffer.o drivers/serial_port/serial_port.o memory/segmentation/gdt.o memory/segmentation/segments.o drivers/interrupts/keyboard.o drivers/interrupts/interrupt_handlers.o drivers/interrupts/interrupts.o drivers/interrupts/pic.o drivers/interrupts/idt.o utils/common/common.o memory/paging/paging.o memory/paging/paging_enable.o memory/heap/memory.o drivers/interrupts/isr.o
     CC = gcc
     CFLAGS = -m32 -nostdlib -fno-builtin -fno-stack-protector \
          -Wno-unused -nostartfiles -nodefaultlibs -Wall -Wextra -Werror -c -masm=intel
@@ -11,7 +11,7 @@
     kernel.elf: $(OBJECTS)
 	ld $(LDFLAGS) $(OBJECTS) -o kernel.elf
 
-    os.iso: kernel.elf
+    kajanos.iso: kernel.elf
 	cp kernel.elf iso/boot/kernel.elf
 	genisoimage -R                              \
                     -b boot/grub/stage2_eltorito    \
@@ -24,7 +24,7 @@
                     -o kajanos.iso                       \
                     iso
 
-    run: os.iso
+    run: kajanos.iso
 	bochs -f bochsrc.txt -q
 
     %.o: %.c
@@ -34,4 +34,4 @@
 	$(AS) $(ASFLAGS) $< -o $@
 
     clean:
-	rm -rf *.o kernel.elf os.iso
+	rm -rf *.o kernel.elf kajanos.iso
