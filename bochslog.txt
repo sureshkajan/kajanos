@@ -34,45 +34,45 @@
 00000000000i[      ]   Sound support: SB16 ES1370
 00000000000i[      ]   USB support: UHCI OHCI EHCI xHCI
 00000000000i[      ]   VGA extension support: vbe cirrus voodoo
-00000000000i[MEM0  ] allocated memory at 0x7fdae1ddd010. after alignment, vector=0x7fdae1dde000
+00000000000i[MEM0  ] allocated memory at 0x7fd969126010. after alignment, vector=0x7fd969127000
 00000000000i[MEM0  ] 32.00MB
 00000000000i[MEM0  ] mem block size = 0x00020000, blocks=256
 00000000000i[MEM0  ] rom at 0xfffe0000/131072 ('/usr/share/bochs/BIOS-bochs-latest')
-00000000000i[      ] lt_dlhandle is 0x558467b99e30
+00000000000i[      ] lt_dlhandle is 0x561bc5053ee0
 00000000000i[PLUGIN] loaded plugin libbx_hdimage.so
-00000000000i[      ] lt_dlhandle is 0x558467b01270
+00000000000i[      ] lt_dlhandle is 0x561bc4fbb410
 00000000000i[PLUGIN] loaded plugin libbx_soundalsa.so
 00000000000i[WAVOUT] ALSA: opened default PCM output device
 00000000000i[WAVOUT] changed sample rate to 44101
-00000000000i[      ] lt_dlhandle is 0x558468479a90
+00000000000i[      ] lt_dlhandle is 0x561bc5933d30
 00000000000i[PLUGIN] loaded plugin libbx_pci.so
-00000000000i[      ] lt_dlhandle is 0x558467b00f40
+00000000000i[      ] lt_dlhandle is 0x561bc4fbb0e0
 00000000000i[PLUGIN] loaded plugin libbx_pci2isa.so
-00000000000i[      ] lt_dlhandle is 0x558467b23bc0
+00000000000i[      ] lt_dlhandle is 0x561bc4fddcd0
 00000000000i[PLUGIN] loaded plugin libbx_usb_uhci.so
-00000000000i[      ] lt_dlhandle is 0x558467b23d30
+00000000000i[      ] lt_dlhandle is 0x561bc4fdde40
 00000000000i[PLUGIN] loaded plugin libbx_acpi.so
-00000000000i[      ] lt_dlhandle is 0x558467ce2750
+00000000000i[      ] lt_dlhandle is 0x561bc519c990
 00000000000i[PLUGIN] loaded plugin libbx_hpet.so
-00000000000i[      ] lt_dlhandle is 0x558467b20db0
+00000000000i[      ] lt_dlhandle is 0x561bc4fdaef0
 00000000000i[PLUGIN] loaded plugin libbx_cmos.so
-00000000000i[      ] lt_dlhandle is 0x55846848a770
+00000000000i[      ] lt_dlhandle is 0x561bc5944a10
 00000000000i[PLUGIN] loaded plugin libbx_dma.so
-00000000000i[      ] lt_dlhandle is 0x55846848b1c0
+00000000000i[      ] lt_dlhandle is 0x561bc5945460
 00000000000i[PLUGIN] loaded plugin libbx_pic.so
-00000000000i[      ] lt_dlhandle is 0x55846848b980
+00000000000i[      ] lt_dlhandle is 0x561bc5945c20
 00000000000i[PLUGIN] loaded plugin libbx_pit.so
-00000000000i[      ] lt_dlhandle is 0x55846848c1c0
+00000000000i[      ] lt_dlhandle is 0x561bc5946460
 00000000000i[PLUGIN] loaded plugin libbx_vga.so
-00000000000i[      ] lt_dlhandle is 0x5584684ad770
+00000000000i[      ] lt_dlhandle is 0x561bc5967a10
 00000000000i[PLUGIN] loaded plugin libbx_floppy.so
-00000000000i[      ] lt_dlhandle is 0x5584684ae320
+00000000000i[      ] lt_dlhandle is 0x561bc59685c0
 00000000000i[PLUGIN] loaded plugin libbx_ioapic.so
-00000000000i[      ] lt_dlhandle is 0x5584684aeb20
+00000000000i[      ] lt_dlhandle is 0x561bc5968dc0
 00000000000i[PLUGIN] loaded plugin libbx_keyboard.so
-00000000000i[      ] lt_dlhandle is 0x5584684af2f0
+00000000000i[      ] lt_dlhandle is 0x561bc5969590
 00000000000i[PLUGIN] loaded plugin libbx_harddrv.so
-00000000000i[      ] lt_dlhandle is 0x5584684b1550
+00000000000i[      ] lt_dlhandle is 0x561bc596b7f0
 00000000000i[PLUGIN] loaded plugin libbx_pci_ide.so
 00000000000i[PLUGIN] init_dev of 'pci' plugin device by virtual method
 00000000000i[DEV   ] i440FX PMC present at device 0, function 0
@@ -80,7 +80,7 @@
 00000000000i[DEV   ] PIIX3 PCI-to-ISA bridge present at device 1, function 0
 00000000000i[PLUGIN] init_dev of 'cmos' plugin device by virtual method
 00000000000i[CMOS  ] Using local time for initial clock
-00000000000i[CMOS  ] Setting initial clock to: Tue Sep  7 07:22:34 2021 (time0=1630979554)
+00000000000i[CMOS  ] Setting initial clock to: Wed Sep  8 02:50:27 2021 (time0=1631049627)
 00000000000i[PLUGIN] init_dev of 'dma' plugin device by virtual method
 00000000000i[DMA   ] channel 4 used by cascade
 00000000000i[PLUGIN] init_dev of 'pic' plugin device by virtual method
@@ -224,71 +224,71 @@
 00000000000i[PLUGIN] reset of 'usb_uhci' plugin device by virtual method
 00000000000i[      ] set SIGINT handler to bx_debug_ctrlc_handler
 00000004662i[BIOS  ] $Revision: 13752 $ $Date: 2019-12-30 14:16:18 +0100 (Mon, 30 Dec 2019) $
-00000317320i[KBD   ] reset-disable command received
-00000318564i[BIOS  ] Starting rombios32
-00000319005i[BIOS  ] Shutdown flag 0
-00000319637i[BIOS  ] ram_size=0x02000000
-00000320080i[BIOS  ] ram_end=32MB
-00000332238i[BIOS  ] Found 1 cpu(s)
-00000345926i[BIOS  ] bios_table_addr: 0x000f9db8 end=0x000fcc00
-00000804844i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
-00001263865i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
-00001263890i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
-00001263915i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
-00001263940i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
-00001263950i[P2ISA ] write: ELCR2 = 0x0a
-00001264726i[BIOS  ] PIIX3/PIIX4 init: elcr=00 0a
-00001278465i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
-00001280792i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
-00001282958i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
-00001283199i[PIDE  ] BAR #4: i/o base address = 0xc000
-00001283853i[BIOS  ] region 4: 0x0000c000
-00001285919i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
-00001286135i[UHCI  ] BAR #4: i/o base address = 0xc020
-00001286789i[BIOS  ] region 4: 0x0000c020
-00001286928i[UHCI  ] new IRQ line = 9
-00001288873i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
-00001289112i[ACPI  ] new IRQ line = 11
-00001289133i[ACPI  ] new IRQ line = 9
-00001289167i[ACPI  ] new PM base address: 0xb000
-00001289181i[ACPI  ] new SM base address: 0xb100
-00001289208i[PCI   ] setting SMRAM control register to 0x4a
-00001518884i[CPU0  ] Enter to System Management Mode
-00001518884i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
-00001518894i[CPU0  ] RSM: Resuming from System Management Mode
-00001748489i[PCI   ] setting SMRAM control register to 0x0a
-00001775223i[BIOS  ] MP table addr=0x000f9e90 MPC table addr=0x000f9dc0 size=0xc8
-00001777081i[BIOS  ] SMBIOS table addr=0x000f9ea0
-00001779199i[BIOS  ] ACPI tables: RSDP addr=0x000f9fd0 ACPI DATA addr=0x01ff0000 size=0xff8
-00001782465i[BIOS  ] Firmware waking vector 0x1ff00cc
-00001784896i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
-00001785623i[BIOS  ] bios_table_cur_addr: 0x000f9ff4
-00001914497i[VBIOS ] VGABios $Id: vgabios.c 226 2020-01-02 21:36:23Z vruppert $
-00001914568i[BXVGA ] VBE known Display Interface b0c0
-00001914600i[BXVGA ] VBE known Display Interface b0c5
-00001917243i[VBIOS ] VBE Bios $Id: vbe.c 228 2020-01-02 23:09:02Z vruppert $
-00005704023i[BIOS  ] IDE time out
-00465759865i[BIOS  ] Booting from 07c0:0000
-00466019725i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=80
-00466023402i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=80
-00466027064i[BIOS  ] *** int 15h function AX=00c0, BX=0000 not yet supported!
-00978967000p[SDL2  ] >>PANIC<< User requested shutdown.
-00978967000i[CPU0  ] CPU is in protected mode (active)
-00978967000i[CPU0  ] CS.mode = 32 bit
-00978967000i[CPU0  ] SS.mode = 32 bit
-00978967000i[CPU0  ] EFER   = 0x00000000
-00978967000i[CPU0  ] | EAX=deadbeef  EBX=00103000  ECX=00100acd  EDX=000603f8
-00978967000i[CPU0  ] | ESP=00067e5c  EBP=00067eb8  ESI=00054524  EDI=00054525
-00978967000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf zf af PF cf
-00978967000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
-00978967000i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
-00978967000i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00978967000i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00978967000i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00978967000i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00978967000i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
-00978967000i[CPU0  ] | EIP=00127000 (00127000)
-00978967000i[CPU0  ] | CR0=0xe0000011 CR2=0x00000000
-00978967000i[CPU0  ] | CR3=0x00102000 CR4=0x00000010
-00978967000i[CMOS  ] Last time is 1630980532 (Tue Sep  7 07:38:52 2021)
-00978967000i[SIM   ] quit_sim called with exit code 1
+00000317540i[KBD   ] reset-disable command received
+00000318822i[BIOS  ] Starting rombios32
+00000319263i[BIOS  ] Shutdown flag 0
+00000319895i[BIOS  ] ram_size=0x02000000
+00000320338i[BIOS  ] ram_end=32MB
+00000332478i[BIOS  ] Found 1 cpu(s)
+00000346166i[BIOS  ] bios_table_addr: 0x000f9db8 end=0x000fcc00
+00000805084i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001264105i[P2ISA ] PCI IRQ routing: PIRQA# set to 0x0b
+00001264130i[P2ISA ] PCI IRQ routing: PIRQB# set to 0x09
+00001264155i[P2ISA ] PCI IRQ routing: PIRQC# set to 0x0b
+00001264180i[P2ISA ] PCI IRQ routing: PIRQD# set to 0x09
+00001264190i[P2ISA ] write: ELCR2 = 0x0a
+00001264966i[BIOS  ] PIIX3/PIIX4 init: elcr=00 0a
+00001278705i[BIOS  ] PCI: bus=0 devfn=0x00: vendor_id=0x8086 device_id=0x1237 class=0x0600
+00001281032i[BIOS  ] PCI: bus=0 devfn=0x08: vendor_id=0x8086 device_id=0x7000 class=0x0601
+00001283198i[BIOS  ] PCI: bus=0 devfn=0x09: vendor_id=0x8086 device_id=0x7010 class=0x0101
+00001283439i[PIDE  ] BAR #4: i/o base address = 0xc000
+00001284093i[BIOS  ] region 4: 0x0000c000
+00001286159i[BIOS  ] PCI: bus=0 devfn=0x0a: vendor_id=0x8086 device_id=0x7020 class=0x0c03
+00001286375i[UHCI  ] BAR #4: i/o base address = 0xc020
+00001287029i[BIOS  ] region 4: 0x0000c020
+00001287168i[UHCI  ] new IRQ line = 9
+00001289113i[BIOS  ] PCI: bus=0 devfn=0x0b: vendor_id=0x8086 device_id=0x7113 class=0x0680
+00001289352i[ACPI  ] new IRQ line = 11
+00001289373i[ACPI  ] new IRQ line = 9
+00001289407i[ACPI  ] new PM base address: 0xb000
+00001289421i[ACPI  ] new SM base address: 0xb100
+00001289448i[PCI   ] setting SMRAM control register to 0x4a
+00001519124i[CPU0  ] Enter to System Management Mode
+00001519124i[CPU0  ] enter_system_management_mode: temporary disable VMX while in SMM mode
+00001519134i[CPU0  ] RSM: Resuming from System Management Mode
+00001748729i[PCI   ] setting SMRAM control register to 0x0a
+00001775463i[BIOS  ] MP table addr=0x000f9e90 MPC table addr=0x000f9dc0 size=0xc8
+00001777321i[BIOS  ] SMBIOS table addr=0x000f9ea0
+00001779439i[BIOS  ] ACPI tables: RSDP addr=0x000f9fd0 ACPI DATA addr=0x01ff0000 size=0xff8
+00001782705i[BIOS  ] Firmware waking vector 0x1ff00cc
+00001785136i[PCI   ] i440FX PMC write to PAM register 59 (TLB Flush)
+00001785863i[BIOS  ] bios_table_cur_addr: 0x000f9ff4
+00001914737i[VBIOS ] VGABios $Id: vgabios.c 226 2020-01-02 21:36:23Z vruppert $
+00001914808i[BXVGA ] VBE known Display Interface b0c0
+00001914840i[BXVGA ] VBE known Display Interface b0c5
+00001917483i[VBIOS ] VBE Bios $Id: vbe.c 228 2020-01-02 23:09:02Z vruppert $
+00005704240i[BIOS  ] IDE time out
+00460466542i[BIOS  ] Booting from 07c0:0000
+00460726402i[BIOS  ] int13_harddisk: function 41, unmapped device for ELDL=80
+00460730079i[BIOS  ] int13_harddisk: function 08, unmapped device for ELDL=80
+00460733741i[BIOS  ] *** int 15h function AX=00c0, BX=0000 not yet supported!
+00675632000p[SDL2  ] >>PANIC<< User requested shutdown.
+00675632000i[CPU0  ] CPU is in protected mode (active)
+00675632000i[CPU0  ] CS.mode = 32 bit
+00675632000i[CPU0  ] SS.mode = 32 bit
+00675632000i[CPU0  ] EFER   = 0x00000000
+00675632000i[CPU0  ] | EAX=deadbeef  EBX=00103000  ECX=00100acd  EDX=000603f8
+00675632000i[CPU0  ] | ESP=00067e5c  EBP=00067eb8  ESI=00054524  EDI=00054525
+00675632000i[CPU0  ] | IOPL=0 id vip vif ac vm rf nt of df IF tf sf zf af PF cf
+00675632000i[CPU0  ] | SEG sltr(index|ti|rpl)     base    limit G D
+00675632000i[CPU0  ] |  CS:0008( 0001| 0|  0) 00000000 ffffffff 1 1
+00675632000i[CPU0  ] |  DS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00675632000i[CPU0  ] |  SS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00675632000i[CPU0  ] |  ES:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00675632000i[CPU0  ] |  FS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00675632000i[CPU0  ] |  GS:0010( 0002| 0|  0) 00000000 ffffffff 1 1
+00675632000i[CPU0  ] | EIP=00127000 (00127000)
+00675632000i[CPU0  ] | CR0=0xe0000011 CR2=0x00000000
+00675632000i[CPU0  ] | CR3=0x00102000 CR4=0x00000010
+00675632000i[CMOS  ] Last time is 1631050302 (Wed Sep  8 03:01:42 2021)
+00675632000i[SIM   ] quit_sim called with exit code 1
