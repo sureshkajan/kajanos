@@ -1,2 +1,2 @@
-# kajanos
-my os
+# kajanOS
+The operating system

@@ -4,7 +4,7 @@
 #include "../drivers/serial_port/serial_port.h"
 //#include <timer.h>
 
-char message[] = "Fifth OS";
+char message[] = "Kajan OS";
 
 
 void print_screen(s8int buffer[]) { fb_write(buffer, strlen(buffer)); }
